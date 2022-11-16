@@ -8,22 +8,23 @@
     <link href="/findmytrace/2022/11/15/%E6%96%B0%E5%8D%9A%E5%AE%A2%E5%A0%82%E5%A0%82%E7%99%BB%E5%A0%B4/"/>
     <url>/findmytrace/2022/11/15/%E6%96%B0%E5%8D%9A%E5%AE%A2%E5%A0%82%E5%A0%82%E7%99%BB%E5%A0%B4/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h1 id="新博客堂堂登場"><a href="#新博客堂堂登場" class="headerlink" title="新博客堂堂登場"></a>新博客堂堂登場</h1><p>Hugo、Jekyll、Hexo和一個絕望的我。</p><h2 id="從Hugo開始"><a href="#從Hugo開始" class="headerlink" title="從Hugo開始"></a>從Hugo開始</h2><p>六個小時之前我的朋友狗給我發了從零開始搭Hugo博客的教程，我看了一眼，是Win系統，轉念一想，我已經不是一年前fork模板倉庫還抄得莫名其妙的我了，我可以直接：</p><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm"><span class="hljs-keyword">brew </span><span class="hljs-keyword">install </span>hugo<br></code></pre></td></tr></table></figure><p>我成功了。<br><del>然後我對著命令行沈思了三秒，緩緩點開網頁搜索“Mac Hugo”，下略。</del><br>然後想起了第一次搭博客的時候看過Hugo，因為沒能足夠輕易地挑到好看的主題而放棄。<del>畢竟當時是為了搭夢向博客，比這個講究多了。</del><br>現在只剩下草率，草率地隨便選了一個主題，再隨便地往文件夾裡一看，似乎有哪裡不對：我在上一個博客搭建的過程中學到的主要是往_post裡添加.md文件，事實上all I want from一個新博客也只不過是寫markdown。<br>接下來的五分鐘裡我：</p><ul><li>思索我是否有可能進行一些前端工作</li><li>思索我是否有可能對現成的主題或模板進行任何修改</li><li>在github搜索“blog template”，看了兩個</li><li>覺得睏了，改為“博客模板”，看了三個</li><li>覺得煩了，我有一個新的想法。</li></ul><h2 id="為什麼不再次Jekyll呢"><a href="#為什麼不再次Jekyll呢" class="headerlink" title="為什麼不再次Jekyll呢"></a>為什麼不再次Jekyll呢</h2><p>我點開了上次用過的模板<a href="https://github.com/FromEndWorld/LOFFER">LOFFER</a>。<br>我剛才說我只會加.md文件，可能是假的，我當時也掙扎了很久。儘管自詡是碼的天才，從零開始用python寫telegram天氣預報機器人只用了一週，但HTML和SCSS我真是一毛錢都看不懂。<br>當時願意掙扎是因為我真的想要一個夢向博客，甚至會為此手繪月亮小圖標。而現在我不僅忘記了掙扎的流程，也根本沒有興趣再掙扎一遍。<br><strong>好吧，我到底想用新博客來幹什麼？</strong></p><ul><li>我有一些廢話。</li><li>我想用markdown語法說廢話。</li><li>我討厭麻煩，同時也可能產生抽風般的興致。</li><li>我不能用英語學習，因此需要中文教程。</li><li>說來丟人，但，是的，我需要中文教程。</li></ul><p>那麼答案已經非常明確了。</p><h2 id="謝謝你，Hexo"><a href="#謝謝你，Hexo" class="headerlink" title="謝謝你，Hexo"></a>謝謝你，Hexo</h2><p>半個小時後我解決了最基礎的頁面，因為<a href="https://github.com/eglantine-shell/hexo-theme-fluid">hexo-theme-fluid</a>的注釋是用中文寫的，而我幾乎只需要：</p><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs haxe">hexo <span class="hljs-keyword">new</span> <span class="hljs-type">page</span> about<br>hexo g -d<br></code></pre></td></tr></table></figure><p>雖然還是遇到了一點困難的，比如我<code>git push</code>的時候不小心推到原來的博客去了，為此緊急學習了半小時git合併衝突。<br>下一個困難就是我要去關於頁寫點什麼廢話。但是無論如何，我的第一篇廢話至此已然告一段落。<br><br><br>最後再說一遍：謝謝你，Hexo，我喜歡看中文。</p>]]></content>
     
     
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="/findmytrace/2022/11/15/hello-world/"/>
-    <url>/findmytrace/2022/11/15/hello-world/</url>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <categories>
+      
+      <category>博客裝修</category>
+      
+    </categories>
     
     
+    <tags>
+      
+      <tag>廢話</tag>
+      
+      <tag>技術</tag>
+      
+    </tags>
     
   </entry>
   
