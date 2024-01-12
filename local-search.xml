@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>AI會唱歌，說謝謝AI</title>
+    <link href="/findmytrace/posts/497589667/"/>
+    <url>/findmytrace/posts/497589667/</url>
+    
+    <content type="html"><![CDATA[<p>誰能想到我試圖作為一個詞人great again的第一步竟然是被AI演唱吸引呢。</p><span id="more"></span><h2 id="感謝網易雲"><a href="#感謝網易雲" class="headerlink" title="感謝網易雲"></a>感謝網易雲</h2><p>去年年底申請音樂人，意外發現還有<a href="https://xstudio.music.163.com/">X Studio</a>這麼好玩的東西——AI歌手演唱，“無需複雜調節，就可以得到自然的演唱效果”，更重要的是免費。<br>好東西。<br>我要玩。<br>然而點開之後三分鐘，我開始搜索：<code>midi是什麼</code>。<br>簡單地說midi是教AI唱歌的譜，那麼首先，我需要一個midi。</p><h2 id="感謝扒譜藝術家"><a href="#感謝扒譜藝術家" class="headerlink" title="感謝扒譜藝術家"></a>感謝扒譜藝術家</h2><p>遍覽去年填過的曲子，我很快找到了其中“看起來一定能找到譜”的一個：《夢と葉桜（夢與葉櫻）》，事實證明確實簡譜和五線譜應有盡有。<br>第二步就是手動把譜子輸入為midi⋯⋯此處包含一些我難以言喻的技術含量，下略。<br>接著我震撼地發現<a href="https://music.163.com/dj?id=2536153488&userid=296155876">這首歌</a>竟然出乎意料地很像活人唱的！非常神奇！<br><em><strong>並且！非常！好玩！！！</strong></em></p><h2 id="倘若沒有譜閣下又該如何應對呢"><a href="#倘若沒有譜閣下又該如何應對呢" class="headerlink" title="倘若沒有譜閣下又該如何應對呢"></a>倘若沒有譜閣下又該如何應對呢</h2><p>第一次的嘗試證明，這裡最關鍵的環節其實是找到譜。<br>但用流行日&#x2F;港名曲填翻的時代已經過去了！而當今盛行的有授權填翻曲又顯然沒有大眾到可以找到曲譜的程度。<br>求助AI這件事有一則有二，很快我點開b站，搜索AI扒譜。<br>好像有救：</p><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc"><span class="hljs-bullet">* </span>BPM Analyzer 分析mp3的BPM，即曲速。<br><span class="hljs-bullet">* </span>Spleeter 分離伴奏和人聲<br><span class="hljs-bullet">* </span>FL Studio （Newtone） 將人聲轉為midi。<br><span class="hljs-bullet">* </span>Cubase也有差不多的效果但似乎不如FL。<br></code></pre></td></tr></table></figure><p>理論很美好，然而現實是轉出來的midi音符稀碎，充斥著人類自然嫻熟的轉音。<del>並且在我努力的去蕪存菁的嘗試後節奏也變得稀碎了，完全沒法聽。</del><br>如果再多擁有一點點樂理知識我能明白這裡的節奏嗎？很難想像，因為我確實沒有這個技術。<br><del>誠然，這裡最便捷的選項是點開淘寶搜索midi扒譜，但一則我窮，二則這有違我嘗試妙妙工具的初心。</del><br>所以：</p><h2 id="還是找譜吧"><a href="#還是找譜吧" class="headerlink" title="還是找譜吧"></a>還是找譜吧</h2><p>試問我什麼時候可以用AI湊出我的婚禮CD呢？<br>敬請期待！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>我的人生妙妙體驗新增提示</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>一些廢話</tag>
+      
+      <tag>讓我看看</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>2023詞作年終總結之還不如去年呢</title>
     <link href="/findmytrace/posts/750382955/"/>
     <url>/findmytrace/posts/750382955/</url>
