@@ -1,0 +1,579 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-TW" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/findmytrace/img/icon.png">
+  <link rel="icon" href="/findmytrace/img/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="熱烈慶祝《社畜摸魚模擬器：偷閒中……》（DeskFishing）發佈。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vibe Coding，於是Game Designer重出江湖">
+<meta property="og:url" content="https://eglantine-shell.github.io/findmytrace/posts/2508055728/index.html">
+<meta property="og:site_name" content="Find My Trace">
+<meta property="og:description" content="熱烈慶祝《社畜摸魚模擬器：偷閒中……》（DeskFishing）發佈。">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2026-04-16T10:08:44.000Z">
+<meta property="article:modified_time" content="2026-04-16T10:09:04.899Z">
+<meta property="article:tag" content="遊戲研究">
+<meta property="article:tag" content="闖作手記">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Vibe Coding，於是Game Designer重出江湖 - Find My Trace</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/findmytrace/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/findmytrace/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/findmytrace/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"eglantine-shell.github.io","root":"/findmytrace/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#066","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/findmytrace/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/findmytrace/js/utils.js" ></script>
+  <script  src="/findmytrace/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/findmytrace/">
+      <strong>Find My Trace</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/findmytrace/">
+                <i class="iconfont icon-home-fill"></i>
+                首頁
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/findmytrace/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                歸檔
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/findmytrace/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分類
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/findmytrace/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                標籤
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/findmytrace/about/">
+                <i class="iconfont icon-user-fill"></i>
+                關於
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/findmytrace/img/river.JPG') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Vibe Coding，於是Game Designer重出江湖"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2026-04-16 18:08" pubdate>
+          2026年4月16日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.8k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          15 分鐘
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Vibe Coding，於是Game Designer重出江湖</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>熱烈慶祝《社畜摸魚模擬器：偷閒中……》（<em>DeskFishing</em>）發佈。</p>
+<span id="more"></span>
+
+<p>《社畜摸魚模擬器：偷閒中……》<br><a href="https://eglantine-shell.github.io/fishing-game/">網頁版本</a><br><a target="_blank" rel="noopener" href="https://www.taptap.cn/app/844089">Taptap版本</a></p>
+<h2 id="（寫給Taptap的）遊戲概況"><a href="#（寫給Taptap的）遊戲概況" class="headerlink" title="（寫給Taptap的）遊戲概況"></a>（寫給Taptap的）遊戲概況</h2><p>《社畜摸鱼模拟器：偷闲中……》是一款移动端轻量网页小游戏。玩家将作为一个温和但绝望的社畜，从地铁通勤、抵达公司、参加例会、在茶水间和工位一路摸到下班倒计时，在平平无奇的工作日里，从公司手中偷回一点属于自己的时间。<br>游戏采用章节式推进：每个关卡对应一个社畜场景，玩家通过点击散落在场景中的小标签进行互动，在有限时间内完成一次次“摸鱼”选择。时间用尽后可以及时收手，也可以继续在红线边缘试探；一旦超时，就可能触发迟到、被领导盯上、茶水间偶遇同事等充满打工人痛感的警告事件。最终，游戏会根据玩家一天中的摸鱼表现生成不同结局与“社畜奖项”，用带有冷幽默气质的方式，为这场上班生存实验写下结语。</p>
+<p>可想而知，开发者是一个温和但绝望的社畜。<br>这是一款建立在办公室日常经验与情绪共鸣上的轻互动作品，其开发和游玩都没有太多的难度，在此，我的意图并无批判与反抗，只是对一种生活方式的记录、一种“无意义摸鱼”现状的深思，当然，还有作为游戏最重要的，在红线边缘试探的快感——或许你小时候也按过鲨鱼牙齿，对，就是那个，你知道自己摸得有点过分了，但老板未必下一秒就来。<br>如果你也喜欢这个游戏，我关心你的精神状态。祝我们都有更多属于自己的时间，不用偷的那种。</p>
+<h2 id="非典型game-designer大腦發光中"><a href="#非典型game-designer大腦發光中" class="headerlink" title="非典型game designer大腦發光中"></a>非典型game designer大腦發光中</h2><p>不得不說，這不算一個常規意義上的好玩小遊戲，它的操作、回饋、內容豐富度都偏弱。雖然有6個關卡12個獎項3個結局，但遊戲性主要體現在文本趣味和“極限試探”，實際上沒有足以鼓勵人完成全收集的機制。<br>它更像一個關於社畜的互動式寓言，<strong>game as expression</strong>。<br>好吧，並不意外，我在百歐學到的好像就是這個。當我告訴別人我學遊戲設計，聽者往往以為我會編程，事實上我沒在課中課後寫過代碼，那更像一種game study和critical design的融合，圍繞一些設計或理念上的意圖……當大藝術家。<br>於是在《偷閒中……》裏我的偏科也不出預料地一覽無餘了。提出概念和做機制設計的過程中ChatGPT多次試圖為我指引更“好玩”的思路，而我一意孤行，且引以為傲：<strong>它是一種對某種生活方式的記錄，一種“無意義摸魚”狀態的深思</strong>——<br>如果上班摸魚是從公司手裏偷回屬於自己的時間，那麼“偷”來的時間要用於什麼呢？為數眾多的職場攻略提醒我們，上班摸魚要致力於實現自我提升，但實現起來總是很難。更多時候，這種偷回來的時間只能用於無所事事，甚至連休息也沒休息好。人的精力是有限的，而公司在八小時裏買斷的不僅是時間，還有創造力和可能性。<br>我知道遊戲機制層面上更成熟的設計推演應該是什麼：把時間條改成“時間—精力—情緒”的綜合資源系統，摸魚方式間出現策略差異，“無所事事”式的摸魚不消耗精力，且緩慢恢復情緒，自我提升消耗大量的精力，對情緒的影響隨機，而隨機出現的老闆、同事、工作消耗所有；再加上多周目狀態繼承，平衡短期的工位生存和長期的自我提升……這樣就會做成一個更有可玩性的資源管理專案。如果要做成這種東西，我猜，接著依靠AI依然可行。<br>AI可以讓我接著vibe coding這個遊戲機制，然而我不是一個game designer，我是一個絕望的社畜。上工不是一個資源管理系統，上工是<strong>隨機刷新狀態的絕望西西弗推石頭</strong>。<br>西西弗推石頭有多周目記憶嗎？可以有，但我會選擇不做這個。</p>
+<p>總之這就是本人取得game design學位後第二次當game designer（第一次是《詩鬼打牌》，好吧同樣是一個非典型桌遊），好玩愛玩下次還敢但下次再說吧！</p>
+<h2 id="另附：一些簡單的遊戲引導"><a href="#另附：一些簡單的遊戲引導" class="headerlink" title="另附：一些簡單的遊戲引導"></a>另附：一些簡單的遊戲引導</h2><p>關於三個結局：</p>
+<ul>
+<li>極限試探以至於警告達到四次以上，且及時下班，可以炒掉老闆。</li>
+<li>極限試探以至於警告兩次以上，將淒慘加班。</li>
+<li>其他情況，平平無奇地下班了。</li>
+</ul>
+<p>關於社畜頒獎：</p>
+<ul>
+<li>僅有一次警告時，根據警告出現的關卡設置榮譽稱號（和不榮譽稱號）。</li>
+<li>十分守序，絕不多摸。</li>
+<li>偶爾試探公司的底線，但沒有觸發警告。</li>
+<li>偶爾試探公司的底線，並不過分，還是被抓了。</li>
+<li>試探公司的底線四次以上，還沒有觸發警告。</li>
+<li>頻繁試探公司的底線，且被抓了。</li>
+<li>此外還有一個保底的普通社畜獎。</li>
+</ul>
+<h2 id="又另："><a href="#又另：" class="headerlink" title="又另："></a>又另：</h2><p>準備發佈時意識到這個合集叫作“有個恨遊戲的人學了做遊戲”，現在想想，我還是更恨上班。<br>我想被發配回偏遠海島做遊戲了，我承認我當年還是哭得太大聲。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/findmytrace/categories/%E6%9C%89%E5%80%8B%E6%81%A8%E9%81%8A%E6%88%B2%E7%9A%84%E4%BA%BA%E5%AD%B8%E4%BA%86%E5%81%9A%E9%81%8A%E6%88%B2/" class="category-chain-item">有個恨遊戲的人學了做遊戲</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/findmytrace/tags/%E9%81%8A%E6%88%B2%E7%A0%94%E7%A9%B6/">#遊戲研究</a>
+      
+        <a href="/findmytrace/tags/%E9%97%96%E4%BD%9C%E6%89%8B%E8%A8%98/">#闖作手記</a>
+      
+    </div>
+  
+</div>
+
+
+              
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/findmytrace/posts/3499973138/" title="我後知後覺的AI大撕烤">
+                        <span class="hidden-mobile">我後知後覺的AI大撕烤</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目錄</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜尋</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">關鍵字</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       Thanks to  <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/findmytrace/js/events.js" ></script>
+<script  src="/findmytrace/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/findmytrace/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/findmytrace/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/findmytrace/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允許 JavaScript 運行的環境下瀏覽效果更佳</div>
+  </noscript>
+</body>
+</html>
